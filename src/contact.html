@@ -5,12 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Crest Consulting LLC</title>
+    <title>Jackson Carver - Portfolio</title>
+    <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
-    <link href="./stylesheets/main.scss" rel="stylesheet" />
+    <!-- Font Awesome icons -->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Line icons-->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./stylesheets/styles.css" />
+    <link rel="stylesheet" href="./stylesheets/main.scss" />
   </head>
-
   <body class="d-flex flex-column h-100">
     <main class="flex-shrink-0">
       <!-- Navigation-->
@@ -23,85 +30,70 @@
       <section>
         <div class="navbarLine">
           <a href="index.html">Home</a>
-          <a class="active-nav-link" href="about.html">About</a>
+          <a href="about.html">About</a>
           <a href="valuation.html">Valuation</a>
-          <a href="contact.html">Contact</a>
+          <a class="active-nav-link" href="contact.html">Contact</a>
         </div>
       </section>
       <div class="card-title-bg p-1"></div>
       <!-- Header-->
       <header class="masthead d-flex align-items-center" id="HeaderBg">
         <div class="container px-4 px-lg-5 text-center">
-          <h1 class="hero-text-other fw-bold">About Crest Consulting</h1>
+          <h1 class="hero-text-other fw-bold">Contact Us!</h1>
         </div>
       </header>
-      <!-- About Us Section -->
-      <section id="about-us">
-        <div class="py-5 bg-light about-us-div">
-          <div class="container px-5 my-5">
-            <div class="row gx-5 justify-content-center">
-              <div class="col-lg-10 col-xl-7">
-                <div class="text-center">
-                  <h1>About Us</h1>
-                  <br />
-                  <div class="fs-4 mb-4">
-                    CREST Consulting is comprised of a group of valuation professionals providing a full array of
-                    residential and commercial real estate valuation and consulting services. Our team of experienced
-                    staff appraisers are committed to providing attentive valuation services focusing on accurate
-                    analysis and consistent report delivery time.
+      <!-- Contact Form-->
+      <section class="content-section bg-two text-center">
+        <div class="container">
+          <div class="row g-5 text-center justify-content-center">
+            <div class="contact-form">
+              <form class="needs-validation" novalidate>
+                <div class="row g-3 text">
+                  <div class="col-sm-6">
+                    <label for="firstName" class="form-label">First name</label>
+                    <input type="text" class="form-control" id="firstName" placeholder="" value="" required />
+                    <div class="invalid-feedback">Valid first name is required.</div>
+                  </div>
+
+                  <div class="col-sm-6">
+                    <label for="lastName" class="form-label">Last name</label>
+                    <input type="text" class="form-control" id="lastName" placeholder="" value="" required />
+                    <div class="invalid-feedback">Valid last name is required.</div>
+                  </div>
+
+                  <div class="col-sm-6">
+                    <label for="email" class="form-label">Email </label>
+                    <input type="email" class="form-control" id="email" placeholder="you@example.com" required />
+                    <div class="invalid-feedback">Please enter a valid email address.</div>
+                  </div>
+
+                  <div class="col-sm-6">
+                    <label for="subject" class="form-label">Subject</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="subject"
+                      placeholder="Business Depot Validation"
+                      required
+                    />
+                    <div class="invalid-feedback">Please enter a subject.</div>
+                  </div>
+
+                  <div class="col-12">
+                    <label for="message" class="form-label">Message</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="message"
+                      placeholder="Can I get validation for the business depot department?"
+                      required
+                    />
+                    <div class="invalid-feedback">Please enter a comment, message or question.</div>
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Service Commitment Section -->
-      <section class="py-5" id="services">
-        <div class="container px-5 my-5">
-          <div class="row gx-5">
-            <div class="col-lg-4 mb-5 mb-lg-0"><h2 class="fw-bolder mb-0">Service Commitment:</h2></div>
-            <div class="col-lg-8">
-              <div class="row gx-5 row-cols-1 row-cols-md-2">
-                <div class="col mb-5 h-100">
-                  <div class="feature bg-feature bg-gradient text-white mb-3 shadow">
-                    <i class="bi bi-check-circle"></i>
-                  </div>
-                  <h2 class="h5">Quality Control</h2>
-                  <p class="mb-0">
-                    Two Tier Review Process with State Certified Appraisers to ensure high quality reports.
-                  </p>
-                </div>
-                <div class="col mb-5 h-100">
-                  <div class="feature bg-feature bg-gradient text-white mb-3 shadow">
-                    <i class="bi bi-card-checklist"></i>
-                  </div>
-                  <h2 class="h5">Preparation Ensured</h2>
-                  <p class="mb-0">
-                    All appraisals are prepared in compliance with the requirements of the Uniform Standards of
-                    Professional Appraisal Practice (USPAP), adopted by the Appraisal Standards Board (ASB) of The
-                    Appraisal Foundation.
-                  </p>
-                </div>
-                <div class="col mb-5 mb-md-0 h-100">
-                  <div class="feature bg-feature bg-gradient text-white mb-3 shadow">
-                    <i class="bi bi-people"></i>
-                  </div>
-                  <h2 class="h5">Skilled Staff</h2>
-                  <p class="mb-0">
-                    Highly trained and qualified professional STAFF appraisers ready to help any customer in need!
-                  </p>
-                </div>
-                <div class="col h-100">
-                  <div class="feature bg-feature bg-gradient text-white mb-3 shadow">
-                    <i class="bi bi-file-earmark-bar-graph"></i>
-                  </div>
-                  <h2 class="h5">Extensive Internal Database</h2>
-                  <p class="mb-0">
-                    Electronic Order Management, enabling quick and reliable status updates to our customers.
-                  </p>
-                </div>
-              </div>
+                <br />
+                <button class="btn btn-contact btn-lg" type="submit">Submit!</button>
+              </form>
             </div>
           </div>
         </div>
@@ -153,5 +145,6 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <script type="module" src="./javascripts/main.js"></script>
+    <script type="module" src="./contact.js"></script>
   </body>
 </html>
